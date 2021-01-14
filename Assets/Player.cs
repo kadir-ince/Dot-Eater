@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-            if (mousePos.x < 0)
+            if (mousePos.x < 0.5)
             {
                 rot = rotateAmount;
             }
